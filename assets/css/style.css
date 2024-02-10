@@ -23,13 +23,6 @@ body {
 
 .container h1 {
     margin-bottom: 1rem;
-    color: black;
-}
-
-.container span {
-    display: block;
-    margin-bottom: 1rem;
-    font-size: 8rem;
     color: white;
 }
 
@@ -58,4 +51,24 @@ body {
     .section p {
       width: 100%;
     }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-number {
+    animation: slideIn 0.5s ease forwards;
+}
+
+#number {
+    font-size: 100px;
+    color: white;
 }
